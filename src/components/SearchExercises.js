@@ -9,9 +9,13 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
     useEffect(() => {
         const fetchExercisesData = async () => {
-            const bodyPartsData = await fetchData("https://exercisedb.p.rapidapi.com/exercises/bodyPartList", exerciseOptions);
+            try {
+                const bodyPartsData = await fetchData("https://exercisedb.p.rapidapi.com/exercises/bodyPartList", exerciseOptions);
 
-            setBodyParts(["all", ...bodyPartsData]);
+                setBodyParts(["all", ...bodyPartsData]);
+            } catch (error) {
+                console.log(error);
+            }
         };
         fetchExercisesData();
     }, []);
