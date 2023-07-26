@@ -7,7 +7,6 @@ import RightArrowIcon from "../assets/icons/right-arrow.png";
 
 const LeftArrow = () => {
     const { scrollPrev } = useContext(VisibilityContext);
-
     return (
         <Typography onClick={() => scrollPrev()} className="right-arrow">
             <img src={LeftArrowIcon} alt="left-arrow" />
