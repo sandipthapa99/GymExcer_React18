@@ -76,7 +76,7 @@ body {
     height: 445px;
     background: #fff;
     border-top: 4px solid #f9971f;
-    border-bottom-left-radius: 20px;
+    border-radius: 8px;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
@@ -97,7 +97,8 @@ body {
   
   .exercise-card:hover,
   .bodyPart-card:hover {
-    transform: scale(1.1, 1.1);
+    /* transform: scale(1.1, 1.1); */
+    /* background-color: #e6e1e1; */
   }
   
   .search-btn:hover {

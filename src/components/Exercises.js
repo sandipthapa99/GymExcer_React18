@@ -41,7 +41,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
             mt="50px"
             // p="20px"
         >
-            <Typography variant="h3" mb={"46px"}>
+            <Typography variant="h4" mb={"46px"}>
                 Showing Results
             </Typography>
             <Stack
@@ -52,9 +52,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
                 flexWrap={"wrap"}
                 justifyContent={"center"}
             >
-                {currentExercises.map((exercise, index) => (
-                    <ExerciseCard key={index} exercise={exercise} />
-                ))}
+                {currentExercises && currentExercises.length > 0 ? currentExercises.map((exercise, index) => <ExerciseCard key={index} exercise={exercise} />) : "No results found!"}
             </Stack>
             <Stack mt={"100px"} alignItems={"center"}>
                 {exercises.length > exercisesPerPage && (

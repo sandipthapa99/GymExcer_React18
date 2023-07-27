@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../assets/images/Logo.png";
 import { Stack } from "@mui/material";
 import { Link } from "react-router-dom";
+import { scrollToView } from "../utils/helpers";
 
 const Navbar = () => {
     return (
@@ -34,20 +35,24 @@ const Navbar = () => {
                     style={{
                         textDecoration: "none",
                         color: "#343A40",
+                        fontWeight: "500",
                         // borderBottom: "3px solid #f9971f",
                     }}
                 >
                     Home
                 </Link>
-                <a
-                    href="#exercises"
+                <p
+                    href="#"
                     style={{
                         textDecoration: "none",
                         color: "#343A40",
+                        cursor: "pointer",
+                        fontWeight: "500",
                     }}
+                    onClick={() => scrollToView("exercises")}
                 >
                     Exercises
-                </a>
+                </p>
             </Stack>
         </Stack>
     );

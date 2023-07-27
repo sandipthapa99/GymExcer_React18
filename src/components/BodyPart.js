@@ -12,7 +12,7 @@ const BodyPart = ({ item, bodyPart, setBodyPart }) => {
             sx={{
                 borderTop: bodyPart === item ? "4px solid #f9971f" : "",
                 backgroundColor: "#fff",
-                borderBottomLeftRadius: "20px",
+                borderRadius: "8px",
                 width: "270px",
                 height: "280px",
                 cursor: "pointer",
@@ -31,7 +31,7 @@ const BodyPart = ({ item, bodyPart, setBodyPart }) => {
                     height: "40px",
                 }}
             />
-            <Typography fontSize={"24px"} fontWeight={"bold"} color={"#3A1212"} textTransform={"capitalize"}>
+            <Typography fontSize={"20px"} fontWeight={"600"} color={"#495057"} textTransform={"capitalize"}>
                 {item}
             </Typography>
         </Stack>

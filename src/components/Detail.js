@@ -37,8 +37,8 @@ const Detail = ({ exerciseDetail }) => {
                     gap: { lg: "35px", xs: "20px" },
                 }}
             >
-                <Typography variant="h3">{name}</Typography>
-                <Typography variant="h6">
+                <Typography variant="h4">{name}</Typography>
+                <Typography variant="p">
                     Exercises keep you strong. {name} is one of the best exercises to target your {target}. It will help you improve your mood and gain energy.
                 </Typography>
 

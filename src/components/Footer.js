@@ -1,7 +1,6 @@
 import React from "react";
 import Logo from "../assets/images/Logo-2.png";
 import { Box, Stack } from "@mui/material";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (

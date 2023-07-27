@@ -6,11 +6,11 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
     return (
         <Box
             sx={{
-                marginTop: { lg: "200px", xs: "20px" },
+                marginTop: { lg: "64px", xs: "20px" },
             }}
             p={"20px"}
         >
-            <Typography variant="h3" mb={"33px"}>
+            <Typography variant="h4" mb={"33px"}>
                 Watch
                 <span style={{ color: "#f9971f", textTransform: "capitalize" }}> {name}</span> exercise videos
             </Typography>
@@ -28,7 +28,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
                     <a key={index} className="exercise-video" href={`https://www.youtube.com/watch?v=${item.video.videoId}`} target="_blank" rel="noreferrer">
                         <img src={item.video.thumbnails[0].url} alt={item.video.title} />
                         <Box>
-                            <Typography variant="h5" color={"#212529"} fontSize={18}>
+                            <Typography variant="h5" color={"#212529"} fontSize={18} fontWeight={"500"}>
                                 {item.video.title}
                             </Typography>
                             <Typography variant="h6" color={"#5C5F66"} fontSize={16}>
