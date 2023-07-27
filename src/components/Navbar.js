@@ -22,13 +22,13 @@ const Navbar = () => {
                     src={Logo}
                     alt="Logo"
                     style={{
-                        height: "48px",
-                        width: "48px",
+                        height: "50px",
+                        width: "80px",
                         margin: "0 20px",
                     }}
                 />
             </Link>
-            <Stack direction={"row"} gap={"40px"} fontSize={"24px"} alignItems={"flex-end"}>
+            <Stack direction={"row"} gap={"40px"} fontSize={"24px"} alignItems={"center"}>
                 <Link
                     to="/"
                     style={{
