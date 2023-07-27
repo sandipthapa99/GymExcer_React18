@@ -101,8 +101,9 @@ body {
   }
   
   .search-btn:hover {
-    color: #f9971f !important;
-    border: 1px solid #f9971f !important;
+    color: #fff !important;
+    border: 1px solid #e98a16 !important;
+    background-color: #e98a16 !important;
   }
   
   .exercise-video {
