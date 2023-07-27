@@ -33,8 +33,8 @@ const Navbar = () => {
                     to="/"
                     style={{
                         textDecoration: "none",
-                        color: "#3A1212",
-                        // borderBottom: "3px solid #FF2625",
+                        color: "#343A40",
+                        // borderBottom: "3px solid #f9971f",
                     }}
                 >
                     Home
@@ -43,7 +43,7 @@ const Navbar = () => {
                     href="#exercises"
                     style={{
                         textDecoration: "none",
-                        color: "#3A1212",
+                        color: "#343A40",
                     }}
                 >
                     Exercises

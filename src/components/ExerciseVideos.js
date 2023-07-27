@@ -12,7 +12,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
         >
             <Typography variant="h3" mb={"33px"}>
                 Watch
-                <span style={{ color: "#ff2625", textTransform: "capitalize" }}> {name}</span> exercise videos
+                <span style={{ color: "#f9971f", textTransform: "capitalize" }}> {name}</span> exercise videos
             </Typography>
 
             <Stack

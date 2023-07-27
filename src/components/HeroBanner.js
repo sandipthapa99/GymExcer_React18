@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
-import HeroBannerImage from "../assets/images/banner.png";
+import HeroBannerImage from "../assets/images/banner3.jpg";
 
 const HeroBanner = () => {
     return (
@@ -12,20 +12,20 @@ const HeroBanner = () => {
             position={"relative"}
             p={"20px"}
         >
-            <Typography color="#FF2625" fontWeight={"600"} fontSize={"26px"}>
+            <Typography color="#f9971f" fontWeight={"500"} fontSize={"24px"}>
                 Fitness Club
             </Typography>
             <Typography
-                fontWeight={700}
+                fontWeight={600}
                 sx={{
-                    fontSize: { lg: "44px", xs: "40px" },
+                    fontSize: { lg: "40px", xs: "24px" },
                 }}
                 mb={"23px"}
-                mt={"30px"}
+                lineHeight={1.55}
             >
-                Sweat, Smile <br /> and Repeat
+                Eat, Sleep, Gym <br /> and Repeat
             </Typography>
-            <Typography fontSize="22px" lineHeight={"35px"} mb={4}>
+            <Typography fontSize="20px" lineHeight={"35px"} mb={2} color={"#495057"}>
                 Check out the most effective exercises
             </Typography>
             <Button
@@ -33,8 +33,9 @@ const HeroBanner = () => {
                 color="error"
                 href="#exercises"
                 sx={{
-                    backgroundColor: "#ff2625",
-                    padding: "10px",
+                    backgroundColor: "#373A40",
+                    padding: "10px 20px",
+                    textTransform: "capitalize",
                 }}
             >
                 Explore Exercises
@@ -42,7 +43,7 @@ const HeroBanner = () => {
             <Typography
                 fontWeight={600}
                 fontSize={"200px"}
-                color={"#ff2625"}
+                color={"#343A40"}
                 sx={{
                     opacity: 0.1,
                     display: { lg: "block", xs: "none" },
